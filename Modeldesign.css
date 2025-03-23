@@ -1,0 +1,763 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./Roboto-Light.ttf);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  .barmenu{
+    display: none;
+  }
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+}
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 12px;
+  display: block;
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  background: rgb(23, 22, 22);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-right {
+  margin-left: auto;
+  padding: 12px 12px;
+}
+.nav-right:hover {
+  background-color: red;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+
+.search-icon {
+  padding: 12px 12px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.imagesection {
+  width: 100%;
+  img {
+    width: 100%;
+    display: block;
+  }
+  position: relative;
+  display: inline-block;
+  .para {
+    p {
+      font-size: 23px;
+    }
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.thirdsection {
+  .thirdhead {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+  }
+  margin-top: 30px;
+  width: 60%;
+  margin: 0 auto;
+  .parathird {
+    text-align: center;
+    color: gray;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .parajustify {
+    text-align: justify;
+    font-weight: 400;
+  }
+}
+.cardparent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  .cardchild {
+    padding: 40px;
+    margin: 0 auto;
+    h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 400;
+      font-family: Roboto;
+    }
+  }
+}
+.tourdates {
+  padding-bottom: 70px;
+  background-color: black;
+  .title {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 50px;
+  }
+  .months {
+    margin: 0 auto;
+    background-color: white;
+    width: 60%;
+    list-style-type: none;
+  }
+  .sectionalmonths {
+    border-bottom: solid 2px lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    padding: 12px;
+    font-family: Roboto;
+    margin-left: 10px;
+    .soldout {
+      background-color: red;
+      color: white;
+      width: 9%;
+      padding: 5px;
+      display: inline;
+      margin-left: 20px;
+    }
+    .three {
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      padding: 8px 13px;
+      margin-left: auto;
+    }
+  }
+}
+.titleitalic {
+  color: lightgray;
+  margin: 22px 0px;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.paratourcards {
+  font-family: Roboto;
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .paracard {
+    background-color: white;
+    padding-bottom: 25px;
+    flex-basis: 30%;
+    justify-content: space-between;
+    img {
+      width: 100%;
+    }
+    h3,
+    h4,
+    p {
+      line-height: 1.5;
+      margin: 13px 0;
+      margin-left: 20px;
+      text-align: left;
+      width: 80%;
+    }
+    h4 {
+      color: gray;
+      font-weight: 400;
+    }
+    p {
+      margin-bottom: -8px;
+    }
+    .cradbtn {
+      width: 35%;
+      padding: 12px;
+      background-color: black;
+      color: white;
+      margin-left: 20px;
+      margin-top: 20px;
+      font-family: Roboto;
+      font-size: 17px;
+    }
+    .cradbtn:hover {
+      color: black;
+      background-color: gray;
+    }
+    
+  }
+}
+.contactme {
+  width: 100%;
+  background-color: white;
+}
+.Contact {
+  background-color: white;
+  font-family: Roboto;
+  margin-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  h3 {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: 450;
+  }
+  h5 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 25px;
+  }
+
+  .overallcontact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  p {
+    padding-top: 10px;
+  }
+
+  .namemail {
+    display: flex;
+
+    input {
+      padding: 12px 18px;
+      margin-right: 20px;
+      font-size: 20px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+  }
+  .msgsend {
+    display: flex;
+    flex-wrap: wrap;
+
+    input {
+      padding: 12px 40px;
+      margin-right: 20px;
+      width: 100%;
+      font-size: 20px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .btnsend {
+      padding: 19px 60px;
+      background-color: black;
+      color: white;
+      margin-left: 67%;
+      font-size: 16px;
+    }
+  }
+  margin-bottom: 100px;
+}
+.details {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.mapimage {
+  img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
+.powerby {
+  font-size: 30px;
+  text-align: center;
+  i:hover {
+    color: red;
+  }
+  i {
+    padding-right: 5px;
+  }
+  h4 {
+    font-family: Roboto;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    margin-bottom: 200px;
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+}
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 12px;
+  display: block;
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  background: rgb(23, 22, 22);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.paracard:hover img{
+  opacity: 80%;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+  .nav-links li a{
+    .solidbar{
+      display: block;
+      color: white;
+      font-size: 15px;
+    }
+  }
+  .nav-links .hide{
+    display: none;
+  }
+  .imagesection {
+    & .para {
+      top: 85%;
+      p{
+        font-size: 12px;
+      }
+      
+    }
+}
+.search-icon{
+  padding: 5px;
+  font-size: 15px;
+}
+.thirdsection{
+  width: 75%;
+  .thirdhead{
+    font-size: 20px;
+  }
+  .parathird{
+font-size: 15px;
+line-height: 1.5;
+  }
+}
+.cardparent {
+  & .cardchild {
+    text-align: center;
+    padding: 28px;
+      h4 {
+font-size: 17px;
+      }
+      img{
+        width: 65%;
+        
+      }
+    }
+
+
+  }
+.tourdates{
+  .title{
+    font-size: 20px;
+  }
+  .titleitalic{
+    font-size: 14px;
+  }
+  .sectionalmonths{
+    font-size: 16px;
+   
+    .soldout{
+      width: 39%;
+      font-size: 14px;
+  }
+  .three{
+    padding: 6px 11px;
+    font-size: 15px;
+  }
+
+}
+}
+.paratourcards {
+  width: 75%;
+  & .paracard {
+    margin-bottom: 30px;
+    text-align: center;
+      h3 {
+        font-size: 16px;
+        margin:7px auto;
+        text-align: center;
+}
+h4{
+  font-size: 13px;
+  margin: 8px auto;
+        text-align: center;
+  
+}
+p{
+  font-size: 13px;
+  margin: 0 auto ;
+  line-height: 1.5;
+  text-align: justify;
+}
+.cradbtn{
+  font-size: 12px;
+  width: 40%;
+  align-items: center;
+}}
+.paracard{
+  flex-basis: 100%;
+}
+}
+.contactme{
+  width: 80%;
+  margin: 0 auto;
+}
+.Contact{
+  width: 80%;
+  .overallcontact{
+    justify-content: center;
+  }
+  
+  h3{
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  h5{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .namemail{
+    margin-left: 10px;
+    input{
+      font-size: 13px;
+      margin-top: 20px;
+      margin-right: 5px;
+      padding: 12px 10px;
+
+    }
+  }
+  .msgsend{
+    input{
+      font-size: 13px ;
+     padding-right: 80px;
+     margin-left: 10px;
+     margin-right: 5px;
+    }
+    .btnsend{
+      padding: 15px 40px;
+      margin-left: 67%;
+      font-size: 14px;
+    }
+    
+  }
+  
+  
+}
+.powerby{
+  font-size: 24px;
+  h4{
+    font-size: 17px;
+  }
+}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .nav-links a {
+    .solidbar{
+      display: none;
+    }
+    font-size: 15px;
+  }
+  .thirdsection {
+    width: 70%;
+    .thirdhead {
+      font-size: 22px;
+    }
+    .parathird{
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+  .imagesection {
+    & .para {
+        p {
+            font-size: 17px;
+        }
+    }
+}
+.cardparent {
+  text-align: center;
+  & .cardchild {
+    padding: 20px;
+      h4 {
+        font-size: 17px;
+      }
+      img{
+        width: 60%;
+        margin: 0 auto;
+      }
+}
+}
+.tourdates {
+    .sectionalmonths {
+      p{
+        font-size: 17px;
+      }
+      .soldout{
+        width: 18%;
+      }
+      .three{
+        padding: 6px 11px;
+      }
+    }
+  }
+  .paratourcards {
+    width: 70%;
+    & .paracard {
+      h3{
+        font-size: 16px;
+      }
+      h4,p{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .cradbtn {
+        width: 60%;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+  .Contact {
+    h3 {
+      font-size: 32px;
+      padding-top: 80px;
+    }
+    h5{
+      font-size: 17px;
+    }
+    p{
+      font-size: 17px;
+    }
+    .overallcontact{
+      justify-content: center;
+    }
+    .namemail{
+      margin-top: 20px;
+      input{
+        font-size: 17px;
+      }
+    }
+    .msgsend{
+      input{
+        font-size: 17px;
+      }
+      .btnsend{
+        margin-left: 67%;
+        padding: 18px 50px;
+      }
+    }
+  }
+  .powerby{
+    font-size: 20px;
+    h4{
+      font-size: 18px;
+    }
+  }
+}
+ 
+       
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .imagesection {
+    .para{
+      p{
+        font-size: 22px;
+      }
+    }
+  }
+
+  .thirdsection{
+    width: 70%;
+    .parajustify{
+      font-size: 17px;
+      line-height: 1.5;
+    }
+  }
+  .cardparent{
+    .cardchild{
+      img{
+        width: 75%;
+      }
+      h4{
+        font-size: 19px;
+      }
+      
+    }
+  }
+  .navbar{
+    .nav-links a {
+      .solidbar{
+        display: none;
+      }
+      font-size: 20px;
+    }
+  }
+  
+  .tourdates{
+.sectionalmonths{
+  font-size: 19px;
+  .soldout{
+    width: 15%;
+  }
+  .three{
+    padding: 6px 10px;
+  }
+  }
+}
+.paratourcards {
+  width: 75%;
+  & .paracard {
+      p {
+          font-size: 16px;
+          line-height: 1.5;
+      }
+      .cradbtn{
+        font-size: 17px;
+        width: 40%;
+      }
+  }
+  
+}
+.Contact{
+  p{
+    text-align: center;
+  }
+  .overallcontact{
+    margin-top: 50px;
+    text-align: center;
+  }
+  h3{
+    font-size: 38px;
+    padding-top: 50px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  .details{
+    font-size: 19px;
+    .email{
+      margin-bottom: 20px;
+    }
+  }
+  .namemail{
+    input{
+      font-size: 19px;
+    }
+  }
+  .msgsend{
+    input{
+      font-size: 19px;
+    }
+    .btnsend{
+      margin-left: 67%;
+    }
+  }
+}
+.powerby{
+  font-size: 27px;
+}
+}
